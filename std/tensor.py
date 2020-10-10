@@ -9,7 +9,7 @@ def to_device(tensor, device: torch.device):
         device: device to place the tensor upon
 
     Returns:
-        the tensor place on the device
+        the tensor placed on the device
     """
     if tensor is None:
         return tensor
