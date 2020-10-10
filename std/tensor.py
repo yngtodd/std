@@ -22,5 +22,5 @@ def to_device(tensor, device: torch.device):
     elif isinstance(tensor, tuple):
         return tuple(to_device(v, device) for v in tensor)
     else:
-        raise NotImplementedError
+        raise NotImplementedError(f'Cannot place tensor of type {type(tensor)}')
 
