@@ -4,8 +4,14 @@ from setuptools import setup, find_packages
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-requirements = []
+
+requirements = [
+    'numpy',
+    'torch'
+]
+
 setup_requirements = ['pytest-runner', ]
+
 test_requirements = ['pytest>=3', ]
 
 setup(
